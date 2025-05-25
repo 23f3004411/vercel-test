@@ -1,0 +1,13 @@
+name: 23f3004411@ds.study.iitm.ac.in
+
+on: [push, pull_request] # This defines when the workflow should run.
+                         # 'push' means it runs when code is pushed to the repository.
+                         # 'pull_request' means it runs when a pull request is opened or updated.
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # Specifies the operating system environment for the job
+
+    steps:
+      - name: My First Step # A descriptive name for this step
+        run: echo "Hello, world!"
